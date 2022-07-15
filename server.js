@@ -6,6 +6,7 @@ const app = express();
 const expressLayouts = require("express-ejs-layouts");
 const indexRouter = require("./routes/index");
 const authorRouter = require("./routes/author");
+const bookRouter = require("./routes/books");
 
 app.use(express.json());
 app.use(express.urlencoded({ limit: "10mb", extended: false }));
@@ -25,5 +26,6 @@ db.once("open", () => console.log("Connected to MongoDB"));
 
 app.use("/", indexRouter);
 app.use("/authors", authorRouter);
+app.use("/books", bookRouter);
 
 app.listen(process.env.PORT || 3000);
