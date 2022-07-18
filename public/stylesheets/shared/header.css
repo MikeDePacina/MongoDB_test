@@ -1,0 +1,35 @@
+.header-title {
+  color: aliceblue;
+  text-decoration: none;
+  font-size: 3em;
+  font-weight: bold;
+}
+
+.header-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5rem;
+}
+
+.header-nav ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.header-nav li a {
+  text-decoration: none;
+  color: aliceblue;
+  padding: 1rem;
+  font-weight: 500;
+}
+.header-nav li a:hover,
+.header-title:hover {
+  color: rgb(223, 118, 118);
+}
+
+.header-link {
+  list-style: none;
+}
