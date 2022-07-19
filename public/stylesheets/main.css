@@ -1,5 +1,8 @@
 @import "shared/header.css";
 @import "shared/buttons.css";
+@import "shared/form.css";
+@import "shared/author.css";
+@import "shared/book.css";
 
 :root {
   font-family: "Lato", sans-serif;
@@ -29,4 +32,8 @@ body {
 .page-header {
   font-size: 2rem;
   font-weight: 800;
+}
+
+.error-message {
+  color: rgb(238, 84, 84);
 }
